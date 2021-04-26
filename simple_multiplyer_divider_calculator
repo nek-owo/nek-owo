@@ -1,0 +1,39 @@
+def multiply():
+    print ('Multiplyer')
+    Nmb1 = int(input('Multiply '))
+    Nmb2 = int(input('By '))
+    print ('Results ' +str(Nmb1*Nmb2))
+    
+def takeaway():
+    print ('Take away')
+    Nmb1 = int(input('Take away '))
+    Nmb2 = int(input('By '))
+    print ('Results ' +str(Nmb1/Nmb2))
+    
+def showmenu():
+    print ('------ multiplyer and divider ------')
+    print ('[1] multiplyer')
+    print ('[2] divider')
+    print ('[3] exit')
+    print ('-' * 20)
+    
+    menu = input('Select menu! : ')
+    
+    if menu == '1':
+        multiply()
+        
+    elif menu == '2':
+        takeaway()
+        
+    elif menu == '3':
+        exit()
+        
+    else:
+        print ('Wrong choice! ')
+
+ask = 'y'
+while(ask == 'y'):
+    showmenu()
+    ask = input('calculate again? y/n ')
+    if ask == 'n':
+        break
