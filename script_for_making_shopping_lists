@@ -1,0 +1,16 @@
+mylist = []
+stop = False
+i = 0
+
+while (not stop):
+    thelist = input('Fill up your shopping list! : '.format(i))
+    mylist.append(thelist)
+    i += 1
+    ask = input('add more (y/n) : ')
+    if ask == 'n':
+        stop = True
+            
+print ('-' * 24)
+print ('you have {} items in your shopping list'.format(len(mylist)))
+for s in mylist:
+    print ('- {}'.format(s))
