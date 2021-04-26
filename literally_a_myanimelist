@@ -1,0 +1,16 @@
+anime = []
+stop = False
+i = 0
+
+while(not stop):
+    animelist = input('what anime have you watched? : '.format(i))
+    anime.append(animelist)
+    i += 1
+    ask = input('have you watched another anime? (y/n)')
+    if ask == 'n':
+        stop = True
+        
+print ('=' * 20)
+print ('you have watched {} anime'.format(len(anime)))
+for anm in anime:
+    print ('- {}'.format(anm))
