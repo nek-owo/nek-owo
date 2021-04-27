@@ -1,0 +1,83 @@
+menu_minum = [
+    ['[1]', 'Kopi', 'Teh', 'Jus'],
+    ['=' * 40],
+    ['[2]', 'Kopi panas', 'Teh panas', 'Jus hangat'],
+    ['=' * 40],
+    ['[3]', 'Es kopi', 'Es teh', 'Jus dingin']
+]
+def menu1():
+    menu = menu_minum[0]
+    del menu[0]
+    print (menu)
+    pilih = input('minum apa? ')
+    if pilih == 'kopi':
+        print ('Memesan kopi')
+        print ('Terima kasih telah memesan dengan kami!')
+    elif pilih == 'teh':
+        print ('Memesan teh')
+        print ('Terima kasih telah memesan dengan kami!')
+    elif pilih == 'jus':
+        print ('Memesan jus')
+        print ('Terima kasih telah memesan dengan kami!')
+    else:
+        print ('salah pilih!')
+        
+def menu2():
+    menu = menu_minum[2]
+    del menu[0]
+    print (menu)
+    pilih = input('minum apa? ')
+    if pilih == 'kopi panas':
+        print ('Memesan kopi panas')
+        print ('Terima kasih telah memesan dengan kami!')
+    elif pilih == 'teh panas':
+        print ('Memesan teh panas')
+        print ('Terima kasih telah memesan dengan kami!')
+    elif pilih == 'jus hangat':
+        print ('Memesan jus hangat')
+        print ('Terima kasih telah memesan dengan kami!')
+    else:
+        print ('salah pilih!')
+        
+def menu3():
+    menu = menu_minum[4]
+    del menu[0]
+    print (menu)
+    pilih = input('minum apa? ')
+    if pilih == 'es kopi':
+        print ('Memesan es kopi')
+        print ('Terima kasih telah memesan dengan kami!')
+    elif pilih == 'es teh':
+        print ('Memesan es teh')
+        print ('Terima kasih telah memesan dengan kami!')
+    elif pilih == 'jus dingin':
+        print ('Memesan jus dingin')
+        print ('Terima kasih telah memesan dengan kami!')
+    else:
+        print ('salah pilih!')
+def showmenu():
+    print ('\n')
+    print ('------------ MENU ------------')
+    for menu in menu_minum:
+        for isimenu in menu:
+            print (isimenu)
+    print ('=' * 40)
+    
+    menu = input('Pilih menu! > ')
+    print ('\n')
+    
+    if menu == '1':
+        menu1()
+    elif menu == '2':
+        menu2()
+    elif menu == '3':
+        menu3()
+    else:
+        ('salah pilih!')
+        
+jawab = 'y'
+while (jawab == 'y'):
+    showmenu()
+    jawab = input('pesan lagi? (y/n)')
+    if jawab != 'y':
+        break
