@@ -1,0 +1,30 @@
+info = {
+    'name':'david123',
+    'password':'56789',
+    'date of birth':'1st Jan 2000'
+}
+
+def loginpg():
+    print ('\n')
+    print ('---------------- Login ----------------')
+    print ('*every fields is required')
+    name = input('Name : ')
+    if name != info['name']:
+        print ('wrong username')
+        loginpg()
+        
+    passw = input('Password : ')
+    if passw != info['password']:
+        print ('wrong password')
+        loginpg()
+        
+    birth = input('Date of Birth : ')
+    if birth != info['date of birth']:
+        print ('wrong date')
+        loginpg()
+        stop = True
+        
+    else:
+        print ('welcome!')
+    
+loginpg()
