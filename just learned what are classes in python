@@ -1,0 +1,22 @@
+class Hero:
+    def __init__(self, name, typee, match, winrate):
+        self.name= name
+        self.type=typee
+        self.match=match
+        self.wr=winrate
+        self.matches= match + '__' + winrate
+        self.all= name + '\n' + typee + '\n' + match + '\n' + winrate
+
+guin = Hero('Guinevere', 'fighter','20', '50%')
+nana = Hero('Nana', 'Mage', '40', '30%')
+ling = Hero('Ling', 'Assasin','5', '80%')
+kaja = Hero('Kaja', 'Support','80', '67.71%')
+   
+print ('winrate kaja')
+print (kaja.wr)
+print ('\n')
+print (guin.all)
+print ('\n')
+print(ling.all)
+print ('\n')
+print(nana.matches)
